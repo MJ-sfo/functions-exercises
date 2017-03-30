@@ -127,3 +127,20 @@ function findLongestWord (sentence) {
 }       // function
 findLongestWord("below is a slightly different take on the function");
 
+
+// 10. Build an ASCII Triangle!
+// function input number
+// loop through number
+// each loop print line of stars  - number depending on loop number
+// no return needed
+
+function printTriangle(stars) {
+  for (var i = 1; i <= stars; i++) {
+    var dash = '';
+    for(var j=0; j<i; j++){
+      dash += '*';
+    }
+    console.log(dash);
+  }
+}
+printTriangle(5);
