@@ -146,4 +146,24 @@ function printTriangle(stars) {
 printTriangle(5);
 
 
+// 11. Create a heads-or-tails game.
+
+// 12. Stretch Challenge: Can you alter the printTriangle function to create a Pyramid?
+// same as 10.  for every line, make dash include spaces equal half of total rows minus numer row
+function printTriangle(stars) {
+  for (var i = 1; i <= stars; i++) {
+    var dash = '';
+    // first add spaces in front of stars
+    for(var j=1; j<= (stars - i) / 2; j++){
+      dash += ' ';
+    }
+    // now add stars
+    for(var j=0; j<i; j++){
+      dash += '*';
+    }
+    console.log(dash);
+  }
+}
+printTriangle(5);
+
 
