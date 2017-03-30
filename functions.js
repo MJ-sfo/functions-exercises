@@ -82,3 +82,26 @@ function findVowels (text) {
   return sum;
 }
 findVowels("Happy");
+
+// 8 Does the array contain "wdi"?
+// loop through array - length of array times
+// compare each element to "wdi"
+// return true or false
+
+var containWdi = false;
+function findWdi (testArray) {
+  for (var i = testArray.length - 1; i >= 0; i--) {
+    if (testArray[i] == "wdi") {
+      containWdi = true;
+      console.log(containWdi);
+      return containWdi;
+    }
+    else {
+      containWdi = false;
+      console.log(containWdi);
+      return containWdi;
+    }
+  }
+}
+var sampleArrray = [9,'Bart Simpson', true, 'wdi'];
+findWdi(sampleArrray);
