@@ -105,3 +105,25 @@ function findWdi (testArray) {
 }
 var sampleArrray = [9,'Bart Simpson', true, 'wdi'];
 findWdi(sampleArrray);
+
+
+// 9. Find the longest word in a sentence
+// break sentence into array of words 
+// start with first word, record word and length
+// compare record with each additional word - replace with longer word
+// return record
+
+function findLongestWord (sentence) {
+  var splitted = sentence.split(/\s+/);
+  // .split(/\s+/) breaks into array, each element seperated by spaces (different words)
+  var longestWord = splitted[0];
+  for (var i = 0; i < splitted.length; i ++) {
+    if (splitted[i].length > longestWord.length) {
+      longestWord = splitted[i];
+    }   // if statement
+  }     // for statement
+  console.log('the longest word is: ' + longestWord);
+  return longestWord;
+}       // function
+findLongestWord("below is a slightly different take on the function");
+
