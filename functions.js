@@ -144,3 +144,6 @@ function printTriangle(stars) {
   }
 }
 printTriangle(5);
+
+
+
