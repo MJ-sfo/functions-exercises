@@ -37,3 +37,23 @@ function pieRadiusSq (radius) {
   return area;
 }
 pieRadiusSq(10);
+
+// 6. Is X Evenly Divisible by Y ?
+// psudocode
+// if x = 0, return no
+//   else if remainder of x/y is 0, then yes,
+//     else no
+
+var divisble = true;
+function findDivisible (x, y) {
+  if (x == 0) {
+    return divisble = false;
+  }
+  else if (x % y == 0) {
+   return divisble = true; 
+  }  
+  else {
+    return divisble = false;
+  }
+ } 
+console.log(findDivisible(6,2));
