@@ -57,3 +57,28 @@ function findDivisible (x, y) {
   }
  } 
 console.log(findDivisible(6,2));
+
+// 7. Vowel Count
+// create loop - length of string
+// make sum variable
+// each loop :
+// convert letter to lowercase
+// compare letter with array of Vowels - if true, add one to sum
+// after finish all loops, return sum
+
+var sum = 0;
+function findVowels (text) {   
+  for (var i = 0; i < text.length; i++ ) {
+  var letter = text.charAt(i).toUpperCase();
+  //each letter changed to uppercase
+  // now check if letter is a vowel
+  var vowels = "AEIOU";
+    if (vowels.indexOf(letter) > -1) {
+        // indexOf returns value of -1 if string not found in second string
+        sum = sum +1;
+    }
+  }
+  console.log(sum);
+  return sum;
+}
+findVowels("Happy");
